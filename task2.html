@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+    <input type="text" id="pass_input" placeholder="Enter a Password">
+    <input type="button" value="Click" onclick="Check_pass()">
+
+    <script>
+
+
+        function Check_pass() {
+            let input1 = document.getElementById('pass_input').value;
+            var upper = /[A-Z]/,
+                number = /[0-9]/;
+            // let arr = "";
+            // arr = input1;
+            // console.log(typeof(arr));
+            // let b ;
+            // console.log( input1.charAt(0));
+            let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            for (let i = 0; i < num.length; i++) {
+                if (input1.charAt(0) == num[i]) {
+                    alert('Write First Letter alphabet not number')
+                
+            }
+
+            }
+            if (input1.length < 8) {
+                alert('Password Should Contain atleast 8 Character')
+            } else if (!upper.test(input1)) {
+                alert('Password Should Contain atleast 1 Uppercase Letter')
+            } else if (!number.test(input1)) {
+                alert('Include Atleast 1 number in Password');
+            }
+            else {
+                alert('Password Looking Strong');
+            }
+        }
+    </script>
+</body>
+
+</html>
