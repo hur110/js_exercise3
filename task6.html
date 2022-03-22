@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+</head>
+<body>
+    <input type="text" name="" id="inp"><br><br>
+    <input type="button" value="Convert into Word" onclick="c_to_word()">
+    <h4 id="output"></h4>
+
+    <!-- Open numberToWords.js file to understand this code.. -->
+    
+    <script src="./numberToWords.js"></script>  
+    <script>
+        function c_to_word() {
+            let val = document.getElementById('inp').value;
+            let out = document.getElementById('output').innerText = `${numberToWords.toWords(val)}`;
+        }
+    </script>
+</body>
+</html>
