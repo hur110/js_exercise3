@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+
+<body>
+    <input type="text" name="" id="str">
+    <input type="text" id="find">
+    <input type="button" value="Search" onclick="occurence()">
+    <p id="occur"></p>
+
+    <script>
+
+
+        function occurence() {
+            let str = document.getElementById('str').value;
+        let find = document.getElementById('find').value;
+        let a = str.split(`${find}`).length -1;
+        document.getElementById('occur').innerText = `Occurence of word "${find}" is: ${a}`;
+        }
+
+        
+    </script>
+</body>
+
+</html>
