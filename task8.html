@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+</head>
+<body>
+    
+
+    <script>
+        let d1 = new Date("Sat Dec 05 2015 23:08:16");
+        console.log("Current Time:", d1);
+        let newtime = d1.getHours()-1;
+        let d2 = new Date(`Sat Dec 05 2015 ${newtime}:08:16`);
+        console.log("1 Hour Before:", d2);
+        // let hour = 60*60*1000;
+        // console.log(hour);
+        // let diff = d1.getTime() - d2.getTime();
+        // console.log(d1.setTime(diff/hour));
+
+        // let date = new Date();
+        // let curr_hour = date.getHours();
+    </script>
+</body>
+</html>
