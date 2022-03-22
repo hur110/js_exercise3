@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="mode_txt">
+    <input type="button" value="Calculate" onclick="cal_mean()">
+
+    <script>
+        function cal_mean() {
+            let txt = document.getElementById('mode_txt').value;
+            // let a = txt.split('');
+            // let b = parseInt(a);
+            // console.log(a);
+            // console.log(Object.keys(a).length);
+            // let sum = 0;
+
+            let array1 = [];
+            array1.unshift(txt.split());
+                console.log(array1);            
+            
+            // 0 + 1 + 2 + 3 + 4
+            const initialValue = 0;
+            const sumWithInitial = array1.reduce(
+                (previousValue, currentValue) => previousValue + currentValue,
+                initialValue
+            );
+
+            console.log(sumWithInitial);
+
+        }
+    </script>
+</body>
+
+</html>
